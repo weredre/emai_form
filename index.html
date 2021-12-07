@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+    <form action="http://formspree.io/andreheslop@gmail.com" method=
+                "post">
+                    <div class="form-group">
+                        <input class="form-control" name="name" placeholder=
+                        "Your name here" type="text">
+                    </div>
+
+
+                    <div class="form-group">
+                        <input class="form-control" name="email" placeholder=
+                        "Your email here*" required="”required”" title=
+                        "Enter your email" type="email">
+                    </div>
+
+                    <textarea class="message-box" cols="40" name="message"
+                    placeholder="Your message here*" required="”required”" rows="5"
+                    style="resize:none" title="Leave your message"></textarea>
+                    <p id="char-count"></p>
+                    <p id="visible-comment"></p>
+                    <button id="button" class="btn btn-default" type="submit">Submit</button>
+                </form>
+</main>
+  </body>
+</html>
